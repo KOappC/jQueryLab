@@ -8,7 +8,7 @@ var name;
 var number;
 var party;
 var container;
-var tooltipText;
+var removeThing;
 
 $(".circles").on("click", function(event) {
     $(".newReservation").fadeIn(300);
@@ -24,8 +24,15 @@ $(".circles").on("mouseenter", function(event) {
     number = $(this).attr("number");
     party = $(this).attr("party");
     if ($(this).hasClass("taken")) {
-        $(this).css("cursor", "not-allowed");
+        $(this).css("cursor", "not-allowed").css("border-radius", "3px");
+        removeThing = $(this).text("Reserved by: " + name + " Party of: " + party);
+
     }
+});
+
+$(".circles").on("mouseleave", function(event) {
+    $(".circles").css("border-radius", "50%");
+
 });
 
 $(".Xend").on("click", function() {
