@@ -1,7 +1,12 @@
 $(document).ready(function () {
 
+var saveState = false;
+
 $(".circles").on("click", function() {
     $(".newReservation").css("display", "flex");
+    if (saveState === true) {
+        alert("I'm sorry, this table is reserved");
+    }
 });
 
 $(".Xend").on("click", function() {
@@ -9,7 +14,8 @@ $(".Xend").on("click", function() {
 });
 
 $("#save").on("click", function() {
-
+    this.$(".circles").addClass("reserved");
+    saveState = true;
 })
 
 }); // Closing of document
