@@ -14,8 +14,7 @@ $(".Xend").on("click", function() {
 });
 
 $("#save").on("click", function() {
-    this.$(".circles").addClass("reserved");
-    saveState = true;
+    
 })
 
 }); // Closing of document
