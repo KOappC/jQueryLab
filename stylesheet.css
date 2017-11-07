@@ -50,6 +50,7 @@ header h5 {
     height: 300px;
     margin: 0 auto;
     background-color: #EEEEEE;
+    z-index: 2;
 }
 
 .circles {
@@ -137,6 +138,7 @@ header h5 {
     margin-left: 20px;
     text-align: left;
 }
+
 
 @media only screen and (min-width: 768px) {
 
