@@ -21,6 +21,7 @@ button {
     font-size: 16px;
     text-align: center;
     color: #EEEEEE;
+    cursor: pointer;
 }
 
 header h4 {
@@ -120,6 +121,11 @@ header h5 {
     margin: 10px;
     margin-left: 310px;
     max-width: 100px;
+    cursor: pointer;
+}
+
+.taken p {
+    color: #CCCCCC;
 }
 
 #nrTitle {
