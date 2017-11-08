@@ -24,14 +24,14 @@ $(".circles").on("mouseenter", function(event) {
     number = $(this).attr("number");
     party = $(this).attr("party");
     if ($(this).hasClass("taken")) {
-        $(this).css("cursor", "not-allowed").css("border-radius", "3px");
+        $(this).css("cursor", "not-allowed").css("border-radius", "3px").css("font-size","13px").css("transition", "0.5s all");
         removeThing = $(this).text("Reserved by: " + name + " Party of: " + party);
 
     }
 });
 
 $(".circles").on("mouseleave", function(event) {
-    $(".circles").css("border-radius", "50%");
+    $(".circles").css("border-radius", "50%").css("font-size","12px");
 
 });
 
